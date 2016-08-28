@@ -82,6 +82,8 @@ void Fractal::draw()
 {
 	for each (Triangle t in triangles)
 	{
+		ofSetColor(ofRandom(255), ofRandom(255), ofRandom(255));
+
 		ofDrawLine(t.c, t.a);
 		ofDrawLine(t.b, t.c);
 		ofDrawLine(t.a, t.b);
