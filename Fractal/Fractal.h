@@ -7,13 +7,14 @@
 class Fractal : public ofBaseApp
 {
 public:
-	float timeToAction = 2000;
+	float timeToAction = 0;
 
 	struct Triangle
 	{
 		ofVec3f a;
 		ofVec3f b;
 		ofVec3f c;
+		ofVec3f color;
 	};
 
 	Fractal();
